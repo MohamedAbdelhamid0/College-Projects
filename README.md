@@ -10,13 +10,13 @@ Welcome to my **College Projects Repository** – a curated collection of academ
 Implementation of various sorting algorithms to understand performance, complexity, and practical use cases.
 
 ### ⚙️ [ALU Circuit](./ALU-Circuit)
-Digital logic design of a simple Arithmetic Logic Unit capable of basic operations like add, subtract, AND, OR.
+Digital logic design of a simple Arithmetic Logic Unit capable of basic operations like add, subtract, multiplication
 
 ### 🎟️ [Cinema Booking Website](./Cinema-Booking-Website)
-A full-stack website for browsing, selecting, and booking movie tickets with a user-friendly interface.
+A front-end project for browsing, selecting, and booking movie tickets with a user-friendly interface.
 
 ### 🔐 [Ciphering](./Ciphering)
-Cryptographic implementations including Caesar cipher, Vigenère cipher, and simple encryption systems.
+Cryptographic implementations including Caesar cipher
 
 ### 🧠 [Computer Processor](./Computer-Processor)
 Simulation and design of a basic CPU architecture with instruction execution and memory components.
@@ -34,9 +34,9 @@ A simplified social media platform with features like posting, commenting, likin
 
 ## 🛠️ Technologies & Tools
 
-- **Languages:** C++, Python, HTML/CSS, JavaScript, Verilog
-- **Tools:** VS Code, Logisim, Git, GitHub, SQLite, React
-- **Concepts:** Algorithms, Digital Logic, Full-Stack Dev, Compiler Design, Cryptography
+- **Languages:** C, CSS, HTML, C++, Java, Python
+- **Tools:** VS Code, Logisim, Git
+- **Concepts:** Algorithms, Digital Logic, Front End, Compiler Design, Cryptography
 
 ---
 
@@ -51,3 +51,4 @@ A simplified social media platform with features like posting, commenting, likin
 ## 📌 Notes
 
 Each folder contains the source code, report (if any), and additional files. Detailed README files are available inside each project folder.
+Questions or Report --> Twitter @0Xtkmo
