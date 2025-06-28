@@ -50,5 +50,5 @@ A simplified social media platform with features like posting, commenting, likin
 
 ## 📌 Notes
 
-Each folder contains the source code, report (if any), and additional files. Detailed README files are available inside each project folder.
-Questions or Report --> Twitter @0Xtkmo
+- Each folder contains the source code, report (if any), and additional files. Detailed README files are available inside each project folder.
+- Questions or Report --> Twitter @0Xtkmo
