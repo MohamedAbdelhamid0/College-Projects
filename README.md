@@ -10,13 +10,13 @@ Welcome to my **College Projects Repository** – a curated collection of academ
 Implementation of various sorting algorithms to understand performance, complexity, and practical use cases.
 
 ### ⚙️ [ALU Circuit](./ALU-Circuit)
-Digital logic design of a simple Arithmetic Logic Unit capable of basic operations like add, subtract, multiplication
+Digital logic design of a simple Arithmetic Logic Unit capable of basic operations like add, subtract, AND, OR.
 
 ### 🎟️ [Cinema Booking Website](./Cinema-Booking-Website)
-A front-end project for browsing, selecting, and booking movie tickets with a user-friendly interface.
+A full-stack website for browsing, selecting, and booking movie tickets with a user-friendly interface.
 
 ### 🔐 [Ciphering](./Ciphering)
-Cryptographic implementations including Caesar cipher
+Cryptographic implementations including Caesar cipher, Vigenère cipher, and simple encryption systems.
 
 ### 🧠 [Computer Processor](./Computer-Processor)
 Simulation and design of a basic CPU architecture with instruction execution and memory components.
@@ -30,13 +30,19 @@ Design of a counter circuit that outputs pseudo-random binary sequences using fl
 ### 📱 [Social Media Application](./Social-Media-Application)
 A simplified social media platform with features like posting, commenting, liking, and user profiles.
 
+### ♞ [Chessboard 6 Knights](./Chessboard_6_Knights)
+Solving a logic puzzle by exchanging black and white knights on a chessboard using iterative search strategies.
+
+### ✈️ [Flight Reservation Software Testing](./Flight_Reservation_Software_Testing)
+Software testing project for a flight reservation system, focusing on automation, test cases, and validation.
+
 ---
 
 ## 🛠️ Technologies & Tools
 
-- **Languages:** C, CSS, HTML, C++, Java, Python
-- **Tools:** VS Code, Logisim, Git
-- **Concepts:** Algorithms, Digital Logic, Front End, Compiler Design, Cryptography
+- **Languages:** C++, Python, Java, HTML/CSS, JavaScript, Verilog
+- **Tools:** VS Code, Logisim, Selenium, Git, GitHub, SQLite, React
+- **Concepts:** Algorithms, Digital Logic, Compiler Design, Cryptography, Full-Stack Dev, Test Automation
 
 ---
 
@@ -50,5 +56,5 @@ A simplified social media platform with features like posting, commenting, likin
 
 ## 📌 Notes
 
-- Each folder contains the source code and additional files. Detailed README files are available inside each project folder.
-- If you face any problem or have any question --> Twitter @0Xtkmo
+- Each folder contains the source code, reports, and documentation for a particular academic project. Detailed `README.md` files will be available inside individual folders.
+- If you face any problem or have any question --> Twiiter @0xtkmo
