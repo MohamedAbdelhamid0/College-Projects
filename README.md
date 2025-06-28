@@ -1,7 +1,5 @@
 # 🎓 College Projects Repository
 
-Welcome to my **College Projects Repository** – a curated collection of academic projects completed throughout my university studies in Computer Engineering and Software Systems. This repository showcases practical applications of software development, hardware design, and theoretical concepts.
-
 ---
 
 ## 📁 Projects Included
