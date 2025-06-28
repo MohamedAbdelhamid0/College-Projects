@@ -1,0 +1,12 @@
+* text=auto
+* text eol=lf
+
+# VHDL extensions
+*.vhdl text diff=vhdl
+*.vhd text diff=vhdl
+
+# Binary files
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary

@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone');
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.center{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(0, 0, 0),rgb(23, 91, 180));
+}
+.tickets{
+    width: 500px;
+    height: fit-content;
+    border: 0.4mm solid rgb(104, 102, 102);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    max-height: 96vh;
+    color: white;
+    background: rgb(0, 0, 0);
+    overflow: auto;
+    box-shadow: 0px 10px 10px -14px rgb(207, 207, 207);
+}
+.ticket-selector{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+.head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.seats{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 150px;
+    position: relative;
+}
+.status{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.seats::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 220px;
+    height: 7px;
+    background: rgba(23, 91, 180, 0.6);
+    border-radius: 2px;
+}
+.item{
+    font-size: 12px;
+    position: relative;
+}
+.item::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    transform: translate(0,-50%);
+    width: 10px;
+    height: 10px;
+    background: white;
+    outline: 0.2mm solid rgb(159, 159, 159);
+    border-radius: 2px;
+}
+.item:nth-child(2)::before{
+    background: rgb(92, 92, 92);
+}
+.item:nth-child(3)::before{
+    background: rgb(23, 91, 180);
+}
+.all-seats{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-gap: 15px;
+    margin: 40px 0;
+    margin-top: 20px;
+    position: relative;
+}
+.seat{
+width: 20px;
+height: 20px;
+background: white;
+border-radius: 3px;
+outline: 0.3mm solid rgb(159, 159, 159);
+cursor: pointer;
+}
+.all-seats input:checked + label{
+    background: rgb(23, 91, 180);
+    outline: none;
+}
+.seat.booked{
+    background: rgb(92, 92, 92);
+    outline: none;
+}
+input{
+    display: none;
+}
+.timings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: 30px;
+}
+.dates{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dates-item{
+    width: 50px;
+    height: 40px;
+    background: rgb(63, 63, 63);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.day{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+.times{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.time{
+    font-size: 14px;
+    width: fit-content;
+    padding: 7px 7px;
+    background: rgb(63, 63, 63);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.timings input:checked + label{
+    background: rgb(23, 91, 180);
+}
+.price{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.total span{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+.price button{
+    background: rgb(23, 91, 180);
+    color: white;
+    font-family: poppins,sans-serif;
+    font-size: 14px;
+    padding: 5px 11px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.package{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+
+}
+.option{
+    font-size: 14px;
+    width: fit-content;
+    padding: 7px 7px;
+    background: rgb(63, 63, 63);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.package input:checked + label{
+    background: rgb(23, 91, 180);
+}

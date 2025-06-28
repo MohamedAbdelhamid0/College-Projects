@@ -1,0 +1,2 @@
+vhdl work "ALU.vhd"
+vhdl work "../../../Downloads/ALUTest-2.vhd"

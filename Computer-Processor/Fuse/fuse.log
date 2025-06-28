@@ -1,0 +1,35 @@
+Running: D:\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Windows/Desktop/CO Final Project/Project/RegisterFileTest_isim_beh.exe -prj C:/Users/Windows/Desktop/CO Final Project/Project/RegisterFileTest_beh.prj work.RegisterFileTest 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Windows/Desktop/CO Final Project/Project/muxpack.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/CO Final Project/Project/Mux32.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/CO Final Project/Project/floprpack.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/CO Final Project/Project/flopr.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/CO Final Project/Project/decoderpack.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/CO Final Project/Project/decoder.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/CO Final Project/Project/RegisterFile.vhd" into library work
+Parsing VHDL file "C:/Users/Windows/Desktop/CO Final Project/Project/../../../Downloads/RegisterTest.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling package muxpack
+Compiling package decoderpack
+Compiling package floprpack
+Compiling architecture behavioral of entity decoder [decoder_default]
+Compiling architecture behavioral of entity flopr [flopr_default]
+Compiling architecture behavioral of entity Mux32 [\Mux32(32)\]
+Compiling architecture behavioral of entity RegisterFile [registerfile_default]
+Compiling architecture behavior of entity registerfiletest
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\RegisterFileTest_isim_beh.exe.sim\libPortability.dll".
+Compiled 17 VHDL Units
+Built simulation executable C:/Users/Windows/Desktop/CO Final Project/Project/RegisterFileTest_isim_beh.exe
+Fuse Memory Usage: 37920 KB
+Fuse CPU Usage: 811 ms

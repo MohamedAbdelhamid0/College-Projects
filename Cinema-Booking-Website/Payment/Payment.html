@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Payment.css">
+    <title>Payment</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="column">
+                    <h3 class="title">Billing Address</h3>
+                    <div class="input-box">
+                        <span>Full Name :</span>
+                        <input type="text" placeholder="Ahmed Ali">
+                    </div>
+                    <div class="input-box">
+                        <span>Email :</span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="input-box">
+                        <span>Address :</span>
+                        <input type="text" placeholder="Apartment - Street">
+                    </div>
+                    <div class="input-box">
+                        <span>City :</span>
+                        <input type="text" placeholder="Cairo">
+                    </div>
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>State :</span>
+                            <input type="text" placeholder="New Cairo">
+                        </div>
+                        <div class="input-box">
+                            <span>Zip Code :</span>
+                            <input type="number" placeholder="11845">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h3 class="title">Payment</h3>
+                    <div class="payment-options">
+                        <button type="button" class="button cash-button">Cash</button>
+                        <button type="button" class="button credit-card-button">Credit Card</button>
+                    </div>
+                    <div class="credit-card-info hidden">
+                        <h3 class="title">Credit Card Information</h3>
+                        <div class="input-box">
+                            <span>Cards Accepted :</span>
+                            <img src="imgcards.png" alt="Accepted Cards">
+                        </div>
+                        <div class="input-box">
+                            <span>Name On Card :</span>
+                            <input type="text" placeholder="Ahmed Ali">
+                        </div>
+                        <div class="input-box">
+                            <span>Credit Card Number :</span>
+                            <input type="number" placeholder="1111 2222 3333 4444">
+                        </div>
+                        <div class="flex">
+                            <div class="input-box">
+                                <span>Exp. Month :</span>
+                                <input type="text" placeholder="January">
+                            </div>
+                            <div class="input-box">
+                                <span>Exp. Year :</span>
+                                <input type="number" placeholder="2028">
+                            </div>
+                            <div class="input-box">
+                                <span>CVV :</span>
+                                <input type="number" placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="submit-button" id="submit" onclick="openPopUp()">Submit</button>
+        </form>
+        <div class="PopUp" id="popup">
+            <img src="404-tick.png">
+            <h2>Awesome!</h2>
+            <p>Your booking was successful. Thank you for booking with Cine Vision!</p>
+            <button type="button" id="home" onclick="gotoHome()">Home</button>
+        </div>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const cashButton = document.querySelector('.cash-button');
+    const creditCardButton = document.querySelector('.credit-card-button');
+    const creditCardInfo = document.querySelector('.credit-card-info');
+    const submitButton = document.getElementById('submit');
+
+    cashButton.addEventListener('click', function() {
+        cashButton.classList.add('active');
+        creditCardButton.classList.remove('active');
+        creditCardInfo.classList.add('hidden');
+    });
+
+    creditCardButton.addEventListener('click', function() {
+        creditCardButton.classList.add('active');
+        cashButton.classList.remove('active');
+        creditCardInfo.classList.remove('hidden');
+    });
+
+    let popup = document.getElementById("popup");
+
+    function openPopUp(){
+        popup.classList.add("open-PopUp");
+    }
+
+    function gotoHome(){
+        window.location.href = "http://127.0.0.1:5500/CineVision/Main-After/after-login.html";
+    }
+
+    submitButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        openPopUp();
+    });
+
+    document.getElementById("home").addEventListener("click", function() {
+        gotoHome();
+    });
+});
+    </script>
+</body>
+</html>

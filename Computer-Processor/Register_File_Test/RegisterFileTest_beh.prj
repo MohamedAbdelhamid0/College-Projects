@@ -1,0 +1,8 @@
+vhdl work "muxpack.vhd"
+vhdl work "Mux32.vhd"
+vhdl work "floprpack.vhd"
+vhdl work "flopr.vhd"
+vhdl work "decoderpack.vhd"
+vhdl work "decoder.vhd"
+vhdl work "RegisterFile.vhd"
+vhdl work "../../../Downloads/RegisterTest.vhd"

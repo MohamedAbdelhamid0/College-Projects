@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0f122f;
+    padding: 25px;
+}
+
+.container form {
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+form .row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.row .column {
+    flex: 1 1 250px;
+}
+
+.column .title {
+    font-size: 20px;
+    color: #161f68;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.column .input-box {
+    margin: 15px 0;
+}
+
+.input-box span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #a3a3a3;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.column .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.flex .input-box {
+    margin-top: 5px;
+}
+
+.input-box img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.payment-options {
+    margin-bottom: 15px;
+}
+
+.button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.cash-button.active,
+.credit-card-button.active {
+    background-color: #007bff;
+}
+
+.cash-button.active:hover,
+.credit-card-button.active:hover {
+    background-color: #0056b3;
+}
+.credit-card-info.hidden {
+    display: none;
+}
+.submit-button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px 0;
+    background: rgb(15, 66, 132);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.submit-button:hover {
+    background-color: rgb(2, 24, 53);
+}
+.payment-options {
+    margin-bottom: 15px;
+}
+
+.button {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid rgb(3, 40, 88);
+    outline: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.button:hover {
+    background-color: #f0f0f0;
+}
+
+.cash-button.active, .credit-card-button.active {
+    background: rgb(15, 66, 132);
+    color: #fff;
+    background: rgb(15, 66, 132); 
+}
+
+.cash-button.active:hover, .credit-card-button.active:hover {
+    background-color: #13163a;
+    border-color: #031222;
+}
+.PopUp {
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.PopUp img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.PopUp h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.PopUp button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.PopUp button:hover{
+    background: #449327;
+    transition: 0.5s ease;
+}
+.open-PopUp {
+    visibility: visible;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}

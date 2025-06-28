@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cine Vision</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="all.css">
+  
+</head>
+
+<body>
+  <div class = "navbar"> 
+    <div class="navbar-container">
+      <div class="logo-container">
+        <h1>
+          Cine Vision
+        </h1>
+      </div>
+      <div class="menu-container">
+        <ul class="menulist">
+          <li class="menuitems">Home</li>
+          <li class="menuitems">Food & Drinks</li>
+          <li class="menuitems">All Movies</li>
+          <li class="menuitems">Trends</li>
+          <li class="menuitems">Bookings</li>
+
+        </div>
+      </div>
+      <div class="user-container">
+        <button class="login-button" id="sign-in-button">Sign in</button>
+        <button class="signup-button" id="join-now-button">Join Now!</button>
+
+<p class="tagline">
+  “CineVision,Your Portal to Cinematic Adventures.”
+</p>
+
+      </div>
+    </div>
+  </div>
+  <div class = "sidebar"> 
+    
+     <i class="left-menu-icon-search fa-solid fa-magnifying-glass"> </i> 
+     <i class="left-menu-icon-bookmark fa-regular fa-bookmark"></i>
+     <i class="left-menu-icon-hourglass fa-solid fa-hourglass-end"></i>
+
+
+  </div>
+
+  <div class="container"> 
+    <div class="content-container">
+          <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0),#151515) , url(pics/monkeyman.jpg);"> 
+      <img class="featured-title" src="pics/monkeyman2.jpg">
+      <p class="featured-desc">
+      An anonymous young man unleashes a campaign of vengeance against the corrupt leaders who murdered his mother and continue to systemically victimize the poor and powerless.
+      </p>
+      <button class="Book-Now-Featured" onclick="redirectToBookingPage('Monkey Man')">Book Now!</button>
+
+      </div>
+
+      <div class="movie-container">
+        <div class="New-Movies" >
+          <h class="New-movie-Title">
+            New Releases
+          </h>
+        </div>
+        <div class="all-movies">
+          <div class="movie-pics1">
+            <img class="movie1" src="pics/sheqo.jpeg">
+            <div class="movie-title1">
+              
+              Sheqo
+
+            </div>
+            <div class="movie1-rating">
+              Arabic | R18
+            </div>
+            <div class="get-tickets-button1">
+            <button class="movie-1-tickets" onclick="redirectToBookingPage('Sheqo')">Get Tickets</button>
+            </div>
+          </div>
+
+
+          <div class="movie-pics2">
+            <img class="movie2" src="pics/hisham.png">
+            <div class="movie-title2">
+              
+              Lahazat Lazeeza
+  
+            </div>
+            <div class="movie2-rating">
+              Arabic | PG15
+            </div>
+            <div class="get-tickets-button2">
+            <button class="movie-1-tickets" onclick="redirectToBookingPage('Lahazat Lazeeza')">Get Tickets</button>
+            </div>
+          </div>
+
+
+          <div class="movie-pics3">
+            <img class="movie3" src="pics/Godzilla.jpeg">
+            <div class="movie-title3">
+              
+              Godzilla X Kong: The New Empire
+  
+            </div>
+            <div class="movie3-rating">
+              English | PG12
+            </div>
+            <div class="get-tickets-button3">
+            <button class="movie-1-tickets" onclick="redirectToBookingPage('Godzilla X Kong: The New Empire')">Get Tickets</button>
+            </div>
+          </div>
+
+
+          <div class="movie-pics4">
+            <img class="movie4" src="pics/Dune.jpg">
+            <div class="movie-title4">
+              
+              Dune: Part Two
+  
+            </div>
+            <div class="movie4-rating">
+              English | PG16
+            </div>
+            <div class="get-tickets-button4">
+            <button class="movie-1-tickets" onclick="redirectToBookingPage('Dune: Part Two')">Get Tickets</button>
+            </div>
+          </div>
+
+
+          <div class="movie-pics5">
+            <img class="movie5" src="pics/3almashy.jpg">
+            <div class="movie-title5">
+              
+              3almashy
+  
+            </div>
+            <div class="movie5-rating">
+              Arabic | PG15
+            </div>
+            <div class="get-tickets-button1">
+            <button class="movie-1-tickets" onclick="redirectToBookingPage('3almashy')">Get Tickets</button>
+            </div>
+          </div>
+        </div>
+      
+        
+      </div>
+      
+
+      
+    </div>
+    <div class="news-letter">
+      <p class="Subscribe"> 
+        Subscribe To Our Newsletter
+      </p>
+      
+      <p class="news-desc">
+        After subscribing, you'll get exclusive
+        offers and rewards on your email
+      </p>
+      <input class="Name"  type="text" placeholder="Your Name">
+      <input class="email"  type="text" placeholder="Your Email">
+      <input class="Country"  type="text" placeholder="Country">
+      <input class="Phone-number"  type="text" placeholder="Phone number">
+
+      
+
+      <input class= "info-acknowledge" type="checkbox">
+      
+      <p class="message-checkmark1">
+        “I, the undersigned, hereby acknowledge that I am the owner of the information provided. I confirm that all the details given are accurate to the best of my knowledge and belief. I understand the importance of providing accurate information and the potential consequences that could arise from providing incorrect or misleading details. I am fully aware of my responsibilities and I am prepared to bear any repercussions that may occur due to the information I have provided. I affirm that I have full rights and authority over the said information and I am providing it willingly and without any coercion.”
+      </p>
+      
+      <input class= "acknowledge" type="checkbox">
+
+      <p class="message-checkmark">
+        Notify me when a new movie is avaliable.
+        By checking this box, you'll get exclusive offers and recieve an email when a new movie is avaliable
+      </p>
+
+      
+      
+
+
+    </div>
+  
+  </div> 
+  
+  <script>
+    var joinNowButton = document.getElementById("join-now-button");
+    var signinbutton = document.getElementById("sign-in-button");
+    signinbutton.addEventListener("click", function() {
+      window.location.href = "http://127.0.0.1:5500/CineVision/Login-SignUp/Login-Sign-Up.html#";
+    });
+    joinNowButton.addEventListener("click", function() {
+      window.location.href = "http://127.0.0.1:5500/CineVision/Login-SignUp/Login-Sign-Up.html#";
+    });
+
+    function redirectToBookingPage(movieTitle) {
+    var bookingPageURL = "http://127.0.0.1:5500/CineVision/Ticket-Booking/Ticket-Booking.html?movie=" + encodeURIComponent(movieTitle);
+    
+    window.location.href = bookingPageURL;
+  }
+  </script>
+</body>
+</html>

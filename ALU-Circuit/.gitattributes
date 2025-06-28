@@ -1,0 +1,12 @@
+# Treat .circ files as binary
+*.circ binary
+
+# Auto-detect text files and normalize line endings for other files
+* text=auto
+* text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary

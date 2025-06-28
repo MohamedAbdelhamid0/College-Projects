@@ -1,0 +1,8 @@
+vhdl isim_temp "muxpack.vhd"
+vhdl isim_temp "Mux32.vhd"
+vhdl isim_temp "floprpack.vhd"
+vhdl isim_temp "flopr.vhd"
+vhdl isim_temp "decoderpack.vhd"
+vhdl isim_temp "decoder.vhd"
+vhdl isim_temp "RegisterFile.vhd"
+vhdl isim_temp "../../../Downloads/RegisterTest.vhd"

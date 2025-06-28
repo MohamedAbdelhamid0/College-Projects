@@ -1,0 +1,2 @@
+vhdl isim_temp "ALU.vhd"
+vhdl isim_temp "../../../Downloads/ALUTest-2.vhd"

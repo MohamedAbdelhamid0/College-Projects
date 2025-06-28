@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Ticket-Booking.CSS">
+    <title>Ticket Booking</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+    <div class="center">
+        <div class="tickets">
+            <div class="ticket-selector">
+                <div class="head">
+                    <div class="title" id="movie-title">Movie Name</div>
+                </div>
+                <div class="seats">
+                    <div class="status">
+                        <div class="item">Avaliable</div>
+                        <div class="item">Booked</div>
+                        <div class="item">Selected</div>
+                    </div>
+                    <div class="all-seats">
+                        <input type="checkbox" name="tickets" id="s1">
+                        <label for="s1" class="seat booked"></label>
+                    </div>
+                </div>
+                <div class="timings">
+                    <div class="dates">
+                        <input type="radio" name="date" id="d1" checked />
+                        <label for="d1" class="dates-item">
+                            <div class="day">Sun</div>
+                            <div class="date">15</div>
+                        </label>
+                        <input type="radio" name="date" id="d2" checked />
+                        <label for="d2" class="dates-item">
+                            <div class="day">Mon</div>
+                            <div class="date">16</div>
+                        </label>
+                        <input type="radio" name="date" id="d3" checked />
+                        <label for="d3" class="dates-item">
+                            <div class="day">Tue</div>
+                            <div class="date">17</div>
+                        </label>
+                        <input type="radio" name="date" id="d4" checked />
+                        <label for="d4" class="dates-item">
+                            <div class="day">Wed</div>
+                            <div class="date">18</div>
+                        </label>
+                        <input type="radio" name="date" id="d5" checked />
+                        <label for="d5" class="dates-item">
+                            <div class="day">Thu</div>
+                            <div class="date">19</div>
+                        </label>
+                        <input type="radio" name="date" id="d6" checked />
+                        <label for="d6" class="dates-item">
+                            <div class="day">Fri</div>
+                            <div class="date">20</div>
+                        </label>
+                        <input type="radio" name="date" id="d7" checked />
+                        <label for="d7" class="dates-item">
+                            <div class="day">Sat</div>
+                            <div class="date">21</div>
+                        </label>
+                    </div>
+                    <div class="times">
+                        <input type="radio" name="time" id="t1" checked>
+                        <label for="t1" class="time">10:00 AM</label>
+                        <input type="radio" name="time" id="t2" checked>
+                        <label for="t2" class="time">01:30 PM</label>
+                        <input type="radio" name="time" id="t3" checked>
+                        <label for="t3" class="time">05:00 PM</label>
+                        <input type="radio" name="time" id="t4" checked>
+                        <label for="t4" class="time">08:30 PM</label>
+                        <input type="radio" name="time" id="t5" checked>
+                        <label for="t5" class="time">12:00 AM</label>
+                    </div>
+                    <div class="package">
+                        <input type="radio" name="option" id="o1" checked>
+                        <label for="o1" class="option">Standard</label>
+                        <input type="radio" name="option" id="o2" checked>
+                        <label for="o2" class="option">VIP</label>
+                    </div>
+                </div>
+            </div>
+            <div class="price">
+                <div class="total">
+                    <span>
+                        <span class="count">0</span> Tickets
+                    </span>
+                    <div class="amount">0</div> EGP
+                </div>
+                <button type="button">Book</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let seats = document.querySelector(".all-seats");
+        for(var i=0; i < 59; i++){
+            let randint = Math.floor(Math.random()*2);
+            let booked = randint === 1 ? "booked" : "";
+            seats.insertAdjacentHTML("beforeend",'<input type="checkbox" name="tickets" id="s' +
+            (i + 2) +
+            '" /><label for="s' + 
+            (i + 2) +
+            '" class="seat ' +
+            booked + 
+            '"booked"></label>'
+            );
+        }
+
+let tickets = seats.querySelectorAll("input");
+tickets.forEach((ticket) => {
+    ticket.addEventListener("change", () => {
+        let amount = Number(document.querySelector(".amount").innerHTML);
+        let count = Number(document.querySelector(".count").innerHTML);
+
+        // Determine the price based on the selected package type
+        let packagetype = document.querySelector('input[name="option"]:checked').id;
+        let price = packagetype === 'o1' ? 130 : 180;
+
+        if (ticket.checked) {
+            count += 1;
+            amount += price;
+        } else {
+            count -= 1;
+            amount -= price;
+        }
+        document.querySelector(".amount").innerHTML = amount;
+        document.querySelector(".count").innerHTML = count;
+    });
+});
+        
+let bookedSeats = seats.querySelectorAll(".seat.booked");
+    bookedSeats.forEach((seat) => {
+        seat.previousElementSibling.disabled = true;
+    });
+
+document.querySelector("button").addEventListener("click", function() {
+    window.location.href = "http://127.0.0.1:5500/CineVision/Payment/Payment.html?";
+});
+
+function getQueryParams() {
+            var params = {};
+            var queryString = window.location.search.substring(1);
+            var pairs = queryString.split("&");
+            for (var i = 0; i < pairs.length; i++) {
+                var pair = pairs[i].split("=");
+                params[pair[0]] = decodeURIComponent(pair[1]);
+            }
+            return params;
+        }
+
+function updateMovieTitle() {
+            var queryParams = getQueryParams();
+            var movieTitle = queryParams["movie"];
+            if (movieTitle) {
+                document.getElementById("movie-title").innerText = movieTitle;
+            }
+        }
+        updateMovieTitle();
+
+        </script>
+    </body>
+</html>
