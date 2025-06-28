@@ -38,9 +38,9 @@ Software testing project for a flight reservation system, focusing on automation
 
 ## 🛠️ Technologies & Tools
 
-- **Languages:** C++, Python, Java, HTML/CSS, JavaScript, Verilog
-- **Tools:** VS Code, Logisim, Selenium, Git, GitHub, SQLite, React
-- **Concepts:** Algorithms, Digital Logic, Compiler Design, Cryptography, Full-Stack Dev, Test Automation
+- **Languages:** C++, Python, Java, HTML/CSS, JavaScript
+- **Tools:** VS Code, Logisim, Selenium, Git
+- **Concepts:** Algorithms, Digital Logic, Compiler Design, Cryptography, Front End, Test Automation
 
 ---
 
