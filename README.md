@@ -57,4 +57,4 @@ Software testing project for a flight reservation system, focusing on automation
 ## 📌 Notes
 
 - Each folder contains the source code, reports, and documentation for a particular academic project. Detailed `README.md` files will be available inside individual folders.
-- If you face any problem or have any question --> Twiiter @0xtkmo
+- If you face any problem or have any question --> *Twiiter **@0xtkmo***
