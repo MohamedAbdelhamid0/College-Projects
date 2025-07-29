@@ -11,7 +11,7 @@ Implementation of various sorting algorithms to understand performance, complexi
 Digital logic design of a simple Arithmetic Logic Unit capable of basic operations like add, subtract, AND, OR.
 
 ### 🎟️ [Cinema Booking Website](./Cinema-Booking-Website)
-A full-stack website for browsing, selecting, and booking movie tickets with a user-friendly interface.
+A front-end website for browsing, selecting, and booking movie tickets with a user-friendly interface.
 
 ### 🔐 [Ciphering](./Ciphering)
 Cryptographic implementations including Caesar cipher, Vigenère cipher, and simple encryption systems.
