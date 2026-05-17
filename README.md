@@ -19,7 +19,10 @@ Cryptographic implementations including Caesar cipher, Vigenère cipher, and sim
 ### 🧠 [Computer Processor](./Computer-Processor)
 Simulation and design of a basic CPU architecture with instruction execution and memory components.
 
-### 🧾 [Lexical and Syntax Analyzer](./Lexical-and-Syntax-Analyzer)
+### � [Distributed LLM Inference & Load-Balanced RAG System](./Distributed%20LLM%20Inference%20%26%20Load-Balanced%20RAG%20System)
+A distributed system for LLM inference with load balancing and Retrieval-Augmented Generation (RAG) capabilities, featuring GPU workers, scheduling, and query optimization.
+
+### �🧾 [Lexical and Syntax Analyzer](./Lexical-and-Syntax-Analyzer)
 Compiler front-end project for performing lexical analysis and syntax parsing of custom code input.
 
 ### ⏱️ [Random Counter Circuit](./Random-Counter-Circuit)
